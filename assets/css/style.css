@@ -1,3 +1,4 @@
+/*General styles for overall website*/
 * {
     margin: 0;
     padding: 0;
@@ -7,23 +8,20 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(65, 105, 225);
+    background-color: tan;
 }
 
+/*Style Start for header*/
 header {
     padding: 25px 35px;
-    background-color: silver;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-image: url(../images/background-image.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 90%;
 }
 
 header h1 {
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 50px;
     color: rgb(65, 105, 225);
     margin: 0;
     text-shadow: 0 0 15px rgba(65, 105, 225, .7);
@@ -49,13 +47,104 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.6vw;
+    font-size: 30px;
     text-shadow: 0 0 15px rgba(65, 105, 225, .7);
 }
 
+/*Pseudo Class*/
 header nav ul li a:hover {
-    background: silver;
+    background: darkgrey;
     font-weight: bolder;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 10px;
+    border: 1px solid ;
+}
+
+
+
+section {
+    padding: 25px;
+}
+
+.background {
+    min-width: 100vw;
+    background-size: cover;
+    background-image: url(../images/herobackground.jpg);
+}
+
+
+.hero {
+    padding: 10px;
+
+}
+
+.hero h2 {
+    margin: 0 auto 25px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: underline solid 3px silver;
+    font-size: 30px;
+    padding-bottom: 30px;
+    width: 50%;
+    color: yellow;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Start of About me styles */
+
+.bio {
+    background-color: tan;
+    font-weight: bolder;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.bio h3 {
+    flex: 0 0 10%;
+    border-right: 3px solid silver;
+    font-size: 35px;
+}
+
+.about-photo {
+    flex: 0 0 30%;
+    width: 300px;
+}
+
+.about-text {
+    flex: 0 0 55%;
+    display: flex;
+    align-items: center;
+}
+
+/* Start of My Work styles */
+
+
+
+/*Style start for Footer*/
+footer {
+    background: silver;
+    width: 100%;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    color: rgb(65, 105, 225);
+    font-size: 30px;
+    margin: 0;
+    font-weight: normal;
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: right;
+    font-size: 25px;
 }
