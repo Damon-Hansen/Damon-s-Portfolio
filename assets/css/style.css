@@ -53,7 +53,7 @@ header nav ul li a {
 
 /*Pseudo Class*/
 header nav ul li a:hover {
-    background: darkgrey;
+    background: silver;
     font-weight: bolder;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 10px;
@@ -66,6 +66,11 @@ section {
     padding: 25px;
 }
 
+img {
+    width: 100%;
+}
+
+/* Hero and background image styles */
 .background {
     min-width: 100vw;
     background-size: cover;
@@ -85,66 +90,102 @@ section {
     justify-content: center;
     text-decoration: underline solid 3px silver;
     font-size: 30px;
-    padding-bottom: 30px;
-    width: 50%;
     color: yellow;
 }
 
-img {
-    max-width: 100%;
+/* Start of overall section styles */
+
+h3 {
+    flex: 0 0 15%;
+    border-right: 3px solid rgb(65, 105, 225);
+    font-size: 35px;
 }
 
-/* Start of About me styles */
-
-.bio {
+.wrapper {
     background-color: tan;
     font-weight: bolder;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
 }
 
-.bio h3 {
-    flex: 0 0 10%;
-    border-right: 3px solid silver;
-    font-size: 35px;
+.wrapper > div {
+    padding: 25px;
+}
+
+
+/* Start of about me styles */
+.about-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .about-photo {
-    flex: 0 0 30%;
     width: 300px;
 }
 
 .about-text {
-    flex: 0 0 55%;
-    display: flex;
+    max-width: 600px;
+    padding: 75px;
     align-items: center;
+    text-align: left;
 }
 
 /* Start of My Work styles */
 
+.other-apps {
+    justify-content: space-between;
+    display: flex;
+}
 
+/* Start of Contact me styles */
 
+.contact-info {
+    font-size: 20px;
+}
 /*Style start for Footer*/
 footer {
-    background: silver;
-    width: 100%;
     padding: 20px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    border-top: rgb(65, 105, 225) solid 3px;
 }
 
 footer h2 {
     color: rgb(65, 105, 225);
-    font-size: 30px;
-    margin: 0;
-    font-weight: normal;
+    font-size: 35px;
 }
 
 footer div {
     line-height: 1.5;
-    text-align: right;
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+/* Media queries start */
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+        color: yellow;
+    }
+    
 }
