@@ -74,7 +74,7 @@ img {
 .background {
     min-width: 100vw;
     background-size: cover;
-    background-image: url(../images/herobackground.jpg);
+    background-image: url(../images/herobackground.jpg)
 }
 
 
